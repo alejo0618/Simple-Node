@@ -17,5 +17,8 @@ COPY . .
 # Bind the port that the image will run on
 EXPOSE 8080
 
+ARG FAVORITE_FOOD
+ENV FAVORITE_FOOD=$FAVORITE_FOOD
+
 # Define the Docker image's behavior at runtime
 CMD ["node", "server.js"]
