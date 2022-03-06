@@ -5,7 +5,7 @@ function sleep(ms) {
 }
 
 async function main() {
-  while(true) {       
+  while(true) {
     console.log(`My favorite food is ${favoriteFood}`);
     await sleep(5000);
   }
